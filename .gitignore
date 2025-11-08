@@ -1,0 +1,86 @@
+########################################
+# .gitignore for .NET API Projects     #
+# Compatible with .NET 6/7/8           #
+########################################
+
+# Build output directories
+bin/
+obj/
+artifacts/
+
+# IDE-specific folders and settings
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+
+# Visual Studio working folder
+.vs/
+
+# Rider settings
+.ReSharper*/
+*.sln.iml
+
+# Ignore sensitive configuration files
+MinimalAPI/appsettings.json
+MinimalAPI/appsettings.Development.json
+MinimalAPI/appsettings.*.json
+
+MinimalAPITest/appsettings.json
+MinimalAPITest/appsettings.*.json
+
+# Keep example files
+!MinimalAPI/appsettings.example.json
+!MinimalAPITest/appsettings.example.json
+
+# NuGet packages and related files
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.assets.json
+
+# Entity Framework migrations
+MinimalAPI/Migrations
+
+# Test result files
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Temporary and cache files
+*.tmp
+*.bak
+*.old
+*.orig
+*.log
+*.cache
+*.pdb
+*.dbmdl
+
+# Docker-related files
+**/docker-compose*.override.yml
+.dockerignore
+
+# Logs and diagnostics
+logs/
+*.tlog/
+*.svclog
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Git conflict and patch files
+*.orig
+*.rej
+*.patch
